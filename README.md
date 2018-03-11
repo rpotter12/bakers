@@ -2,6 +2,7 @@
 
 - It is an application in which the bakery owner's can sell their bakery item by this app.
 - The customer can reach to the bakery which is near to him/her.
+- The customer can save much time by not waiting for food by by standing in shop.
 
 # How customer have to use this bakery app
 - customer have to login with their id.
@@ -11,6 +12,7 @@
 - then customer have to select the bakery item.
 - customer have to pay the amount by online.
 - time will display which shows at what time you have to collect items.
+- customer can access to different bakery in the city which are far away from their home.
 
 # How bakery owner have to use this app
 - they have an seperate id.
