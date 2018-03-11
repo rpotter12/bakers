@@ -2,7 +2,7 @@
 
 - It is an application in which the bakery owner's can sell their bakery item by this app.
 - The customer can reach to the bakery which is near to him/her.
-- The customer can save much time by not waiting for food by by standing in shop.
+- The customer can save much time by not standing in shop for food..
 
 # How customer have to use this bakery app
 - customer have to login with their id.
