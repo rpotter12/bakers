@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">bakers</string>
+    <string name="title">title</string>
+    <string name="Email">Email</string>
+    <string name="password">password</string>
+    <string name="login">Log in</string>
+    <string name="signup">Sign up</string>
+    <string name="TextView">forgotpassword</string>
+    <string name="bakers">bakers</string>
+</resources>
