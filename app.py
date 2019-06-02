@@ -1,4 +1,4 @@
-from flask import render_template, request, redirect, Flask
+from flask import Flask, render_template, request
 import pymysql
 from source import *
 
