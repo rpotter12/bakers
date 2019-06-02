@@ -2,9 +2,393 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a02ce0d-8fd2-4096-b2ba-a343f0048d8f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/scripts/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source.py" beforeDir="false" afterPath="$PROJECT_DIR$/source.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/biscuits.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/.hound.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/Gemfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/Gruntfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/ISSUE_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/dist/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/dist/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/dist/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/dist/css/bootstrap-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/dist/js/npm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_data/browser-bugs.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_data/browser-features.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_data/core-team.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_data/glyphicons.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_data/sass-team.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_data/showcase.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_data/translations.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/ads.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/alerts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/badges.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/breadcrumbs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/button-dropdowns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/button-groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/dropdowns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/glyphicons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/input-groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/jumbotron.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/labels.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/list-group.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/media.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/navs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/page-header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/pagination.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/panels.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/progress-bars.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/responsive-embed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/thumbnails.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/components/wells.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/css/buttons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/css/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/css/forms.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/css/grid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/css/helpers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/css/images.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/css/less.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/css/overview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/css/responsive-utilities.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/css/sass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/css/tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/css/type.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/customizer-variables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/getting-started/accessibility.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/getting-started/browser-device-support.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/getting-started/community.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/getting-started/disabling-responsiveness.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/getting-started/download.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/getting-started/examples.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/getting-started/grunt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/getting-started/license.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/getting-started/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/getting-started/third-party-support.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/getting-started/tools.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/getting-started/translations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/getting-started/whats-included.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/js/affix.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/js/alerts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/js/buttons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/js/carousel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/js/collapse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/js/dropdowns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/js/modal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/js/overview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/js/popovers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/js/scrollspy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/js/tabs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/js/tooltips.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/js/transitions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/nav/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/nav/components.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/nav/css.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/nav/customize.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/nav/getting-started.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/nav/javascript.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/nav/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_includes/nav/migration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_layouts/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_plugins/bridge.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_plugins/bugify.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_pug/customizer-nav.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/_pug/customizer-variables.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/brand/bootstrap-outline.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/brand/bootstrap-punchout.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/brand/bootstrap-solid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/css/docs.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/css/docs.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/css/ie10-viewport-bug-workaround.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/css/src/docs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/css/src/pygments-manni.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/flash/ZeroClipboard.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/img/components.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/img/devices.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/img/expo-lyft.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/img/expo-newsweek.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/img/expo-riot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/img/expo-vogue.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/img/sass-less.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/js/customize.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/js/docs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/js/ie-emulation-modes-warning.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/js/ie10-viewport-bug-workaround.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/js/ie8-responsive-file-warning.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/js/raw-files.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/js/src/application.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/js/src/customizer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/js/vendor/Blob.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/js/vendor/FileSaver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/js/vendor/ZeroClipboard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/js/vendor/anchor.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/js/vendor/autoprefixer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/js/vendor/holder.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/js/vendor/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/js/vendor/jszip.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/js/vendor/less.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/assets/js/vendor/uglify.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/browser-bugs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/components.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/css.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/customize.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/dist/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/dist/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/dist/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/dist/css/bootstrap-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/dist/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/dist/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/dist/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/dist/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/dist/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/dist/js/npm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/blog/blog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/blog/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/carousel/carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/carousel/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/cover/cover.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/cover/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/dashboard/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/dashboard/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/grid/grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/grid/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/jumbotron-narrow/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/jumbotron-narrow/jumbotron-narrow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/jumbotron/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/jumbotron/jumbotron.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/justified-nav/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/justified-nav/justified-nav.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/navbar-fixed-top/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/navbar-fixed-top/navbar-fixed-top.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/navbar-static-top/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/navbar-static-top/navbar-static-top.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/navbar/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/navbar/navbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/non-responsive/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/non-responsive/non-responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/offcanvas/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/offcanvas/offcanvas.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/offcanvas/offcanvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/blog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/carousel.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/cover.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/dashboard.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/equal-height-columns.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/grid.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/jumbotron-narrow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/jumbotron.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/justified-nav.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/navbar-fixed.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/navbar-static.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/navbar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/non-responsive.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/offcanvas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/sign-in.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/starter-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/sticky-footer-navbar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/sticky-footer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/screenshots/theme.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/signin/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/signin/signin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/starter-template/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/starter-template/starter-template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/sticky-footer-navbar/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/sticky-footer-navbar/sticky-footer-navbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/sticky-footer/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/sticky-footer/sticky-footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/theme/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/theme/theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/tooltip-viewport/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/tooltip-viewport/tooltip-viewport.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/examples/tooltip-viewport/tooltip-viewport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/getting-started.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/javascript.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/migration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/docs/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/grunt/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/grunt/bs-commonjs-generator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/grunt/bs-glyphicons-data-generator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/grunt/bs-lessdoc-parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/grunt/bs-raw-files-generator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/grunt/change-version.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/grunt/configBridge.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/grunt/npm-shrinkwrap.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/grunt/sauce_browsers.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/.jscsrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/affix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/alert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/collapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/popover.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/scrollspy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/unit/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/unit/affix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/unit/alert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/unit/button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/unit/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/unit/collapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/unit/dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/unit/modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/unit/phantom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/unit/popover.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/unit/scrollspy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/unit/tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/unit/tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/vendor/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/vendor/qunit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/vendor/qunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/visual/affix-with-sticky-footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/visual/affix.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/visual/alert.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/visual/button.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/visual/carousel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/visual/collapse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/visual/dropdown.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/visual/modal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/visual/popover.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/visual/scrollspy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/visual/tab.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tests/visual/tooltip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/transition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/.csscomb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/.csslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/alerts.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/badges.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/bootstrap.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/breadcrumbs.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/button-groups.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/buttons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/carousel.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/close.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/code.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/component-animations.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/dropdowns.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/forms.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/glyphicons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/grid.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/input-groups.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/jumbotron.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/labels.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/list-group.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/media.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/alerts.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/background-variant.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/border-radius.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/buttons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/center-block.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/clearfix.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/forms.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/gradients.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/grid-framework.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/grid.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/hide-text.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/image.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/labels.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/list-group.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/nav-divider.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/nav-vertical-align.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/opacity.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/pagination.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/panels.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/progress-bar.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/reset-filter.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/reset-text.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/resize.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/responsive-visibility.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/size.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/tab-focus.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/table-row.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/text-emphasis.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/text-overflow.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/mixins/vendor-prefixes.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/modals.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/navbar.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/navs.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/normalize.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/pager.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/pagination.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/panels.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/popovers.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/print.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/progress-bars.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/responsive-embed.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/responsive-utilities.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/scaffolding.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/tables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/theme.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/thumbnails.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/tooltip.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/type.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/utilities.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/less/wells.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/nuget/MyGet.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/nuget/bootstrap.less.nuspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/nuget/bootstrap.nuspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/package.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/patties.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/signup.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +401,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="435">
+              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -27,10 +411,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+            <state relative-caret-position="210">
+              <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -50,9 +452,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/signup.html" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/source.py" />
       </list>
     </option>
   </component>
@@ -83,6 +487,16 @@
             <path>
               <item name="bakers" type="b2602c69:ProjectViewProjectNode" />
               <item name="bakers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bakers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bakers" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bakers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bakers" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -149,7 +563,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24666142" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24666142" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
@@ -168,24 +582,38 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source.py">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        <state relative-caret-position="390">
+          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+        <state relative-caret-position="210">
+          <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="435">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
