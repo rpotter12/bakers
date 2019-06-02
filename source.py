@@ -1,0 +1,10 @@
+def getdb():
+    return "abc"
+def getdbuser():
+    return "root"
+def getdbpass():
+    return ""
+def getdbport():
+    return 3306
+def gethost():
+    return "localhost"
