@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Login</title>
+  <title>Edit Item</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../static/bootstrap/dist/css/bootstrap.min.css">
   <script src="../static/bootstrap/docs/assets/js/vendor/jquery.min.js"></script>
   <script src="../static/bootstrap/dist/js/bootstrap.min.js"></script>
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }
-    
+
     /* Add a gray background color and some padding to the footer */
     .footer {
       background-color: #f2f2f2;
       padding: 25px;
     }
-    
+
   .carousel-inner img {
       width: 100%; /* Set width to 100% */
       margin: auto;
@@ -29,7 +29,7 @@
   /* Hide the carousel text when the screen is less than 600 pixels wide */
   @media (max-width: 600px) {
     .carousel-caption {
-      display: none; 
+      display: none;
     }
   }
   .form
@@ -48,7 +48,7 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="index">Bakers</a>
     </div>
@@ -59,18 +59,21 @@
         <li><a href="#">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="loginpage"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        <li><a href="signuppage"><span class="glyphicon glyphicon-sigh-up"></span> Signup</a></li>
+        <li><a href="shop"><span class="glyphicon glyphicon-log-in"></span> {{ sname }}</a></li>
+        <li><a href="logout"><span class="glyphicon glyphicon-sigh-up"></span> Logout</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div class="container form">
-  <form class="form-group" method="POST" action="login">
-    <p>Email: <input type="text" class="form-control" name="T1"></p>
-      <p>Password: <input type="text" class="form-control" name="T2"></p><br><br>
-    <p><button class="btn btn-success btn-block">Login</button></p>
+  <form class="form-group" method="POST" action="shopitemedit">
+    <p>Item Name: <input type="text" class="form-control" name="T1" value="{{ data[0] }}"></p>
+    <p>Description: <input type="text" class="form-control" name="T2" value="{{ data[1] }}"></p>
+    <p>Price: <input type="text" class="form-control" name="T3" value="{{ data[2] }}"></p>
+    <p>Availabal Piece: <input type="text" class="form-control" name="T4" value="{{ data[3] }}"></p>
+    <p>Image: <input type="text" class="form-control" name="T5" value="{{ data[4] }}"></p><br><br>
+    <p><button class="btn btn-success btn-block">edit</button></p>
   </form>
 </div>
 

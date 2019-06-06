@@ -4,9 +4,9 @@
   <title>Signup</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/dist/css/bootstrap.min.css') }}">
-  <script src="{{ url_for('static', filename='bootstrap/docs/assets/js/vendor/jquery.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='bootstrap/dist/js/bootstrap.min.js') }}"></script>
+  <link rel="stylesheet" href="../static/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../static/bootstrap/docs/assets/js/vendor/jquery.min.js"></script>
+  <script src="../static/bootstrap/dist/js/bootstrap.min.js"></script>
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -67,7 +67,7 @@
 </nav>
 
 <div class="container form">
-  <form class="form-group" method="POST" action="#">
+  <form class="form-group" method="POST" action="signup">
     <p>Name: <input type="text" class="form-control" name="T1"></p>
     <p>Address: <input type="text" class="form-control" name="T2"></p>
     <p>Usertype (shop/buyer): <input type="text" class="form-control" name="T3"></p>

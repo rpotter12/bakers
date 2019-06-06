@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bakers</title>
+  <title>Items</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../static/bootstrap/dist/css/bootstrap.min.css">
   <script src="../static/bootstrap/docs/assets/js/vendor/jquery.min.js"></script>
   <script src="../static/bootstrap/dist/js/bootstrap.min.js"></script>
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }
-    
+
     /* Add a gray background color and some padding to the footer */
     .footer {
       background-color: #f2f2f2;
       padding: 25px;
     }
-    
+
   .carousel-inner img {
       width: 100%; /* Set width to 100% */
       margin: auto;
@@ -29,7 +29,7 @@
   /* Hide the carousel text when the screen is less than 600 pixels wide */
   @media (max-width: 600px) {
     .carousel-caption {
-      display: none; 
+      display: none;
     }
   }
   </style>
@@ -42,7 +42,7 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="index">Bakers</a>
     </div>
@@ -53,8 +53,8 @@
         <li><a href="#">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="loginpage"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        <li><a href="signuppage"><span class="glyphicon glyphicon-sigh-up"></span> Signup</a></li>
+        <li><a href="buyer"><span class="glyphicon glyphicon-log-in"></span> {{ bname }}</a></li>
+        <li><a href="logout"><span class="glyphicon glyphicon-sigh-up"></span> Logout</a></li>
       </ul>
     </div>
   </div>
@@ -76,7 +76,7 @@
         <div class="carousel-caption">
           <h3>Sell </h3>
           <p>Money Money.</p>
-        </div>      
+        </div>
       </div>
 
       <div class="item">
@@ -84,25 +84,25 @@
         <div class="carousel-caption">
           <h3>More Sell </h3>
           <p>Lorem ipsum...</p>
-        </div>      
+        </div>
       </div>
         <div class="item">
           <img src="../static/img/main2.jpg" alt="Image" style="height:450px">
           <div class="carousel-caption">
             <h3> </h3>
             <p></p>
-          </div>      
+          </div>
         </div>
         <div class="item">
           <img src="../static/img/main3.jpg" alt="Image" style="height:450px">
           <div class="carousel-caption">
             <h3> </h3>
             <p></p>
-          </div>      
+          </div>
         </div>
     </div>
-    
-    
+
+
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -114,28 +114,28 @@
       <span class="sr-only">Next</span>
     </a>
 </div>
-  
-<div class="container text-center">    
-  <h1>Bakers</h1><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="../static/img/patties.jpeg" class="img-responsive" style="width:100%" alt="Image">
-      <p>Patties</p>
+
+{% if data %}
+    <div class="container text-center">
+      <h1>Bakers</h1><br>
+        <div class="row">
+        {% for a in data %}
+            <div class="col-sm-3">
+                    <img src="../static/img/patties.jpeg" class="img-responsive" style="width:100%" alt="Image">
+                    <p>{{ a[0] }}</p>
+                    <p>{{ a[2] }}</p>
+                    <form method="post" action="addproduct">
+                        <input type="hidden" name="T1" value="{{ a[0] }}">
+                        <input type="hidden" name="T2" value="{{ a[2] }}">
+                        <p><button>Add to cart</button></p>
+                    </form>
+            </div>
+        {% endfor %}
+        </div><br>
     </div>
-    <div class="col-sm-4"> 
-      <img src="../static/img/biscuits.jpeg" class="img-responsive" style="width:100%" alt="Image">
-      <p>Biscuits</p>    
-    </div>
-    <div class="col-sm-4">
-      <div class="well">
-       <p><b><h1>We sell food...</h1></b></p>
-      </div>
-      <div class="well">
-       <p><b><h2>tasty food available</h2></b></p>
-      </div>
-    </div>
-  </div>
-</div><br>
+{% elif msg %}
+    <h3>{{ msg }}</h3>
+{% endif %}
 
 <footer class="footer">
   <div class="container-fluid text-center">

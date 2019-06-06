@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bakers</title>
+  <title>Shop</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../static/bootstrap/dist/css/bootstrap.min.css">
@@ -53,8 +53,8 @@
         <li><a href="#">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="loginpage"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        <li><a href="signuppage"><span class="glyphicon glyphicon-sigh-up"></span> Signup</a></li>
+        <li><a href="buyer"><span class="glyphicon glyphicon-log-in"></span> {{ bname }}</a></li>
+        <li><a href="logout"><span class="glyphicon glyphicon-sigh-up"></span> Logout</a></li>
       </ul>
     </div>
   </div>
@@ -119,20 +119,22 @@
   <h1>Bakers</h1><br>
   <div class="row">
     <div class="col-sm-4">
-      <img src="../static/img/patties.jpeg" class="img-responsive" style="width:100%" alt="Image">
-      <p>Patties</p>
+      <a href="#">
+        <img src="../static/img/patties.jpeg" class="img-responsive" style="width:100%" alt="Image">
+        <p>Products</p>
+      </a>
     </div>
     <div class="col-sm-4"> 
-      <img src="../static/img/biscuits.jpeg" class="img-responsive" style="width:100%" alt="Image">
-      <p>Biscuits</p>    
+      <a href="showcart">
+        <img src="../static/img/biscuits.jpeg" class="img-responsive" style="width:100%" alt="Image">
+        <p>Cart</p>
+      </a>
     </div>
-    <div class="col-sm-4">
-      <div class="well">
-       <p><b><h1>We sell food...</h1></b></p>
-      </div>
-      <div class="well">
-       <p><b><h2>tasty food available</h2></b></p>
-      </div>
+    <div class="col-sm-4"> 
+      <a href="buyeraccount">
+        <img src="../static/img/biscuits.jpeg" class="img-responsive" style="width:100%" alt="Image">
+        <p>Account</p>
+      </a>
     </div>
   </div>
 </div><br>
