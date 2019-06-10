@@ -1,9 +1,14 @@
 from flask import Flask, render_template, request, url_for, redirect,session
 import pymysql
 from source import *
+from werkzeug.utils import secure_filename
+import os
+import time
 
 app = Flask(__name__)
 app.secret_key = "super secret key"
+
+app.config['UPLOAD_FOLDER']='./static/photos'
 
 # to show main welcome page
 @app.route('/')
@@ -72,8 +77,7 @@ def login():
         password = request.form['T2']
 
         # dependency injection
-        conn = pymysql.connect(host=gethost(), port=getdbport(), user=getdbuser(), passwd=getdbpass(), db=getdb(),
-                               autocommit=True)
+        conn = pymysql.connect(host=gethost(), port=getdbport(), user=getdbuser(), passwd=getdbpass(), db=getdb(), autocommit=True)
 
         cur = conn.cursor()
         sql="select * from home where email='"+email+"' AND password='"+password+"'"
@@ -128,30 +132,47 @@ def additempage():
 # to insert item in database table
 @app.route('/additem', methods=['GET','POST'])
 def additem():
-    if request.method == 'POST':
-        itemname = request.form['T1']
-        description = request.form['T2']
-        price = request.form['T3']
-        piece = request.form['T4']
-        email = session['email']
-        name = session['name']
+    if 'usertype' in session:
+        usertype = session['usertype']
+        if usertype == 'shop':
+            if request.method == 'POST':
+                file = request.files['F1']
+                itemname = request.form['T1']
+                description = request.form['T2']
+                price = request.form['T3']
+                piece = request.form['T4']
+                email = session['email']
+                name = session['name']
 
-        # dependency injection
-        conn = pymysql.connect(host=gethost(), port=getdbport(), user=getdbuser(), passwd=getdbpass(), db=getdb(),
-                               autocommit=True)
+                if file:
+                    path = os.path.basename(file.filename)
+                    file_ext = os.path.splitext(path)[1][1:]
+                    filename = str(int(time.time())) + '.' + file_ext
+                    filename = secure_filename(filename)
 
-        cur = conn.cursor()
-        s1 = "insert into item values('" + itemname + "','" + description + "','" + price + "','" + piece + "','" + email + "')"
+                    # dependency injection
+                    conn = pymysql.connect(host=gethost(), port=getdbport(), user=getdbuser(), passwd=getdbpass(),
+                                           db=getdb(),
+                                           autocommit=True)
+                    cur = conn.cursor()
+                    s1 = "insert into item values('" + itemname + "','" + description + "','" + price + "','" + piece + "','" + email + "','"+ filename +"')"
 
-        cur.execute(s1)
-        n = cur.rowcount
-
-        msg = "no data saved"
-        if n == 1:
-            msg = "data saved"
-        return render_template('additem.html', data=msg, sname = name)
+                    try:
+                        cur.execute(s1)
+                        n = cur.rowcount
+                        if n == 1:
+                            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+                            return render_template('additem.html', sname = name)
+                        else:
+                            return render_template('additem.html', sname = name)
+                    except:
+                        return render_template('additem.html', sname = name)
+            else:
+                return redirect(url_for('additempage'))
+        else:
+            return redirect(url_for('loginpage'))
     else:
-        return render_template('additem.html')
+        return redirect(url_for('loginpage'))
 
 # to show shopkeepers items
 @app.route('/shopshow')
@@ -178,7 +199,7 @@ def shopshow():
         return redirect(url_for('loginpage'))
 
 # to show item edit page
-@app.route('shopitemeditpage', methods=['GET','POST'])
+@app.route('/shopitemeditpage')
 def shopitemeditpage():
     if "usertype" in session:
         usertype = session['usertype']
@@ -265,8 +286,20 @@ def accountupdatepage():
     if "usertype" in session:
         usertype = session['usertype']
         name = session['name']
+        email = session['email']
         if usertype == 'shop':
-            return render_template('shopaccount.html', sname = name)
+            conn = pymysql.connect(host=gethost(), port=getdbport(), user=getdbuser(), passwd=getdbpass(), db=getdb(),
+                                   autocommit=True)
+            cur = conn.cursor()
+            sql = "select * from home where email='" + email + "'"
+            cur.execute(sql)
+            n = cur.rowcount
+            name = session['name']
+            if n > 0:
+                out = cur.fetchone()
+                return render_template('shopaccount.html', data=out, sname=name)
+            else:
+                return render_template('shop.html', msg="no data found")
         else:
             return redirect(url_for('loginpage'))
     else:
@@ -312,8 +345,8 @@ def buyer():
         return redirect(url_for('loginpage'))
 
 # to show all items page
-@app.route('/shopshow')
-def shopshow():
+@app.route('/buyershow')
+def buyershow():
     if "usertype" in session:
         usertype = session['usertype']
         email = session['email']
@@ -400,8 +433,20 @@ def buyeraccountupdatepage():
     if "usertype" in session:
         usertype = session['usertype']
         name = session['name']
+        email = session['email']
         if usertype == 'buyer':
-            return render_template('buyeraccount.html', bname = name)
+            conn = pymysql.connect(host=gethost(), port=getdbport(), user=getdbuser(), passwd=getdbpass(), db=getdb(),
+                                   autocommit=True)
+            cur = conn.cursor()
+            sql = "select * from home where email='" + email + "'"
+            cur.execute(sql)
+            n = cur.rowcount
+            name = session['name']
+            if n > 0:
+                out = cur.fetchall()
+                return render_template('buyeraccount.html', data=out, sname=name)
+            else:
+                return render_template('buyer.html', msg="no data found")
         else:
             return redirect(url_for('loginpage'))
     else:
@@ -421,7 +466,7 @@ def buyeraccountupdate():
                                autocommit=True)
 
         cur = conn.cursor()
-        s1 = "update home set name='" + name + "',address='" + address + "',password='" + password + "'"
+        s1 = "update home set name='" + name + "',address='" + address + "',password='" + password + "' where email='"+ email +"'"
 
         cur.execute(s1)
         n = cur.rowcount

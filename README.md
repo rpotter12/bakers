@@ -1,6 +1,6 @@
 # bakers
 
-- It is an application in which the bakery owner's can sell their bakery item by this app.
+- It is an web application in which the bakery owner's can sell their bakery item by this app.
 - The customer can reach to the bakery which is near to him/her.
 - The customer can save much time by not standing in shop for food..
 

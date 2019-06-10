@@ -121,7 +121,7 @@
         <div class="row">
         {% for a in data %}
             <div class="col-sm-3">
-                    <img src="../static/img/patties.jpeg" class="img-responsive" style="width:100%" alt="Image">
+                    <img src="{{ a[5] }}" class="img-responsive" style="width:100%" alt="Image">
                     <p>{{ a[0] }}</p>
                     <p>{{ a[2] }}</p>
                     <form method="post" action="addproduct">
