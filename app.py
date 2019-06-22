@@ -231,30 +231,47 @@ def shopitemeditpage():
 # to update item information
 @app.route('/shopitemedit', methods=['GET','POST'])
 def shopitemedit():
-    if request.method == 'POST':
-        itemname = request.form['T1']
-        description = request.form['T2']
-        price = request.form['T3']
-        piece = request.form['T4']
-        email = session['email']
-        name = session['name']
+    if 'usertype' in session:
+        usertype = session['usertype']
+        if usertype == 'shop':
+            if request.method == 'POST':
+                file = request.files['F1']
+                itemname = request.form['T1']
+                description = request.form['T2']
+                price = request.form['T3']
+                piece = request.form['T4']
+                email = session['email']
+                name = session['name']
 
-        # dependency injection
-        conn = pymysql.connect(host=gethost(), port=getdbport(), user=getdbuser(), passwd=getdbpass(), db=getdb(),
-                               autocommit=True)
+                if file:
+                    path = os.path.basename(file.filename)
+                    file_ext = os.path.splitext(path)[1][1:]
+                    filename = str(int(time.time())) + '.' + file_ext
+                    filename = secure_filename(filename)
 
-        cur = conn.cursor()
-        s1 = "update item set itemname='" + itemname + "',description='" + description + "',price='" + price + "'"
+                    # dependency injection
+                    conn = pymysql.connect(host=gethost(), port=getdbport(), user=getdbuser(), passwd=getdbpass(),
+                                           db=getdb(),
+                                           autocommit=True)
+                    cur = conn.cursor()
+                    s1 = "update item set itemname='" + itemname + "',description='" + description + "',price='" + price + "',piece='"+ piece +"', filename='"+ filename +"' where email='"+ email +"'"
 
-        cur.execute(s1)
-        n = cur.rowcount
-
-        msg = "no data saved"
-        if n == 1:
-            msg = "data saved"
-        return render_template('shop.html', sname = name)
+                    try:
+                        cur.execute(s1)
+                        n = cur.rowcount
+                        if n == 1:
+                            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+                            return redirect(url_for('shopshow'))
+                        else:
+                            return redirect(url_for('shopitemedit'))
+                    except:
+                        return redirect(url_for('loginpage'))
+            else:
+                return redirect(url_for('shopitemedit'))
+        else:
+            return redirect(url_for('loginpage'))
     else:
-        return render_template('shop.html')
+        return redirect(url_for('loginpage'))
 
 # to show items which have come for order by the user
 @app.route('/ordershow')
