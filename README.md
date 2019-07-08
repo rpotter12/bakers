@@ -19,7 +19,7 @@
 - they have to login in their id.
 - enter all the details.
 - they have to add the name of all the items which are available in their bakery.
-- after getting order they have enter the time in which they will prepare the order.
+- after getting order they have enter the time in which they will prepare the order.  
 
 ## To run locally
 - install the virtual environment package
@@ -32,4 +32,4 @@
 - install required packages of the project
 	- `pip3 install flask`
 	- `pip3 install pymysql`
-- Open the project in pycharm and start using it.
+- to run : `python3 app.py`
