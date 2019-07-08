@@ -283,15 +283,15 @@ def ordershow():
             conn = pymysql.connect(host=gethost(), port=getdbport(), user=getdbuser(), passwd=getdbpass(), db=getdb(),
                                    autocommit=True)
             cur = conn.cursor()
-            sql = "select * from order where email='"+ email +"'"
+            sql = "select * from orders where email='"+ email +"'"
             cur.execute(sql)
             n = cur.rowcount
             name = session['name']
             if n > 0:
                 out = cur.fetchall()
-                return render_template('order.html', data=out, sname = name)
+                return render_template('orders.html', data=out, sname = name)
             else:
-                return render_template('order.html', msg="no data found")
+                return render_template('orders.html', msg="no data found")
         else:
             return redirect(url_for('loginpage'))
     else:
